@@ -12,7 +12,6 @@ def processDataFeeds():
         feed.populateDB(conn)
         conn.commit()
         feed.log("PopulateDBEnd ")
-    conn.commit()
     conn.close()
 
 
