@@ -28,7 +28,7 @@ Lot's, I wrote this code to deal with data for a particular project and realized
 ## refactor Excel based feed classes into subclasses of a more general ExcelDataFeed class that handles the common functionality
 
 ## Logging
-I used this as command line tool, and the basic printing to standard out worked for me, this is too crude from a production server based type scenario
+I used this as command line tool, and the basic printing to standard out worked for me, this is too crude for a production server based type scenario
 
 ## Error handling
 THERE IS NONE! {blush}
