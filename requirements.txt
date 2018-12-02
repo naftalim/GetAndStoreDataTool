@@ -1,0 +1,4 @@
+requests==2.19.1
+dropbox==9.2.0
+openpyxl==2.5.12
+psycopg2==2.7.6.1
