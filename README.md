@@ -5,7 +5,7 @@ process data feeds. get data from somewhere/somehow and store data somewhere/som
 * a controller function gets a collection of datafeed objects from a datafeedFactory object
 * controller iterates through the collection and calls a getData and populateDB method on each datafeed object
 
-a datafeed is a class that inherits from a baseDataFeed class which defines a logging method and also a instance map for the instances 
+a datafeed is a class that inherits from a baseDataFeed class. a datafeed class implemnents its own getData and populateDB methods. the baseDataFeed class defines a logging method and a instance map for the instances to 
 maintain state between thier getData and populateDB method calls. 
 
 #### to add datafeed
