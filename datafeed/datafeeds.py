@@ -9,7 +9,7 @@ getDropbox = my_dropbox.getDropbox
 
 class DataFeed(object):
     type = ""
-    classLevelState = {}
+
     def __init__(self):
         self.state = {}
     def log(self, message):
