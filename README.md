@@ -23,6 +23,10 @@ Lot's, I wrote this code to deal with data for a particular project and realized
 * getData is appropriately generalized in that it makes no assumptions about where and how your feed will get data (this is because my application, itself, contained this ambiguity)
 * populateDB is not generlized in that the methods receive a db connection from the controller who manages getting the conn and the commit. I did this because all my datafeeds where being stored in an SQL DB and I wanted a straightforward place of authority for managing those connections, but for this to be a general tool, the controller cannot make any assumptions about how and where a feed will store its data.
 
+## datafeedFactory 
+* better registration strategy, instantiating datafeeds and appending them to the returned collection may not be the best way forward, see next item
+*  add support for different sets of datafeeds, maybe by supporting different implementations of datafeedFactory classes
+
 ## refactor JSON based feed classes into subclasses of a more general jsonDataFeed class that handles the common functionality
 
 ## refactor Excel based feed classes into subclasses of a more general ExcelDataFeed class that handles the common functionality
