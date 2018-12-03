@@ -16,7 +16,7 @@ maintain state between thier getData and populateDB method calls.
 #### register datafeed with factory
 * simply instantiate the class and append it the collection that's returned by the factory's getDataFeeds method
 
-# Todo
+# TODO
 Lot's, I wrote this code to deal with data for a particular project and realized only later that the pattern was general enough for a tool
 
 ## Generalize the data storage srategy (will get to it when I need this)
