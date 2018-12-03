@@ -39,5 +39,5 @@ THERE IS NONE! {blush}
 See above for the logging, same explaination
 
 ## More efficient handling of postgres inserts on the datafeeds 
-right now it's iterating though the data and inserting records. the python postgres driver provides a couple of faster methods, where basically I'd iterate the data, building up a string, and on completion, inserting at one time, using one of these methods to avoid the unneeded back and forth trips. this should make things faster at the expense of mainting more data in memory. Right now, neither are bottlenecks. 
+right now it's iterating though the data and inserting records. the python postgres driver provides a couple of faster methods, where basically I'd iterate the data, build up a string, and on completion, insert everythig at one time, using one of these methods to avoid the unneeded back and forth trips. this should make things faster at the expense of mainting more data in memory. Right now, neither are bottlenecks. 
 
